@@ -32,6 +32,10 @@ header {
 	margin-bottom: 30px;
 }
 
+.title {
+	color: #ff6a95;
+}
+
 .card {
 	background-color: #fff;
 	color: #333;
@@ -186,7 +190,7 @@ input:focus {
 }
 
 .about-link {
-	position: absolute;
+	position: fixed;
 	bottom: 20px;
 	right: 20px;
 	color: #fff;
