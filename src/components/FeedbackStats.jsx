@@ -1,7 +1,7 @@
 import { useContext } from 'react';
 import FeedbackContext from '../context/FeedbackContex';
 
-function FeedbackStats({}) {
+function FeedbackStats() {
 	const { feedback } = useContext(FeedbackContext);
 
 	// Calculate avarage rating

@@ -3,7 +3,7 @@ import FeedbackItem from './FeedbackItem';
 import { useContext } from 'react';
 import FeedbackContext from '../context/FeedbackContex';
 
-function FeedbackList({}) {
+function FeedbackList() {
 	const { feedback } = useContext(FeedbackContext);
 
 	if (!feedback || feedback.length === 0) {
