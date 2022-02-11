@@ -1,5 +1,9 @@
-import PropTypes from 'prop-types';
-function FeedbackStats({ feedback }) {
+import { useContext } from 'react';
+import FeedbackContext from '../context/FeedbackContex';
+
+function FeedbackStats({}) {
+	const { feedback } = useContext(FeedbackContext);
+
 	// Calculate avarage rating
 
 	let avarage = (
@@ -17,9 +21,5 @@ function FeedbackStats({ feedback }) {
 		</div>
 	);
 }
-
-FeedbackStats.propTypes = {
-	feedback: PropTypes.array.isRequired,
-};
 
 export default FeedbackStats;
